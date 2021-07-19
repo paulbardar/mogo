@@ -1,0 +1,103 @@
+.team {
+	padding: 3rem 0 3rem;
+	@include media-breakpoint-up(md) {
+		padding: 10rem 0 11rem;
+	}
+	.main-title {
+		p {
+			margin-bottom: 9rem;
+		}
+	}
+	.title {
+		margin-bottom: 8rem;
+	}
+	.team-member {
+		position: relative;
+		@include media-breakpoint-down(md) {
+	 	 margin-bottom: 2rem;
+		}
+	.team-member-desc {
+	  text-align: center;
+	}
+	.team-member-name {
+	  text-transform: uppercase;
+	  color: $dark;
+	  margin-bottom: 0.9rem;
+	  font-family: $montserrat;
+	  letter-spacing: -0.027em;
+	}
+	.team-member-position {
+	  text-transform: capitalize;
+	  letter-spacing: -0.033em;
+	}
+  }
+  .team-img {
+	position: relative;
+	transition: transform .5s ease-in, box-shadow .5s ease-in;
+	margin-bottom: 28px;
+	img {
+	  width: 100%;
+	}
+	@include media-breakpoint-up(md) {
+	  img{
+		max-width: 100%;
+	  }
+	}
+	&:before {
+	  content: '';
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: 0;
+	  background: linear-gradient( 0deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+	  opacity: 0;
+	  z-index: 1;
+	  transition: opacity .5s ease-in;
+	}
+	.team-member-links {
+	  position: absolute;
+	  z-index: 5;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  display: -webkit-flex;
+	  display: -ms-flex;
+	  display: flex;
+	  transition: opacity .5s ease-in;
+	  opacity: 0;
+	  a, .social-link {
+		width: 56px;
+		height: 56px;
+		position: relative;
+		background: $yellow;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		svg {
+		  fill: $pink;
+		}
+		&:hover {
+		  background: $pink;
+		  svg {
+			fill: $white;
+		  }
+		}
+	  }
+	}
+	&:hover {
+	  .team-member-links {
+		opacity: 1;
+	  }
+	  &:before {
+		opacity: 0.9;
+	  }
+	  transform: translate(-10px, -10px);
+	  box-shadow: 10px 10px 0 $blue;
+	}
+
+	}
+
+}

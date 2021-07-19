@@ -1,0 +1,79 @@
+.testimonials {
+	padding: 69px 0 39px;
+	background: $xlight-gray;
+}
+.slide-speech {
+	position: relative;
+	outline: none;
+	.slide-speech-wrap {
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 0 20px;
+		@include media-breakpoint-up(md) {
+			flex-wrap: nowrap;
+			padding: 0 110px;
+		}
+	}
+	.slide-speech-img {
+		padding: 41px;
+		border: 2px solid $blue;
+	}
+	.slide-speech-block {
+		padding: 5px;
+		margin-left: 52px;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		flex-direction: column;
+		font-family: $roboto;
+		font-size: $font-size-third;
+		font-style: italic;
+		line-height: 1.5;
+		margin-bottom: 7px;
+	}
+	.slide-speech-phrase  {
+		font-family: $roboto;
+		font-size: $font-size-third;
+		line-height: 1.5;
+		margin-bottom: 7px;
+	}
+	.slide-speech-author {
+		font-family: $kaushanscript;
+		font-size: $font-size-third;
+		position: relative;
+		padding-left: 69px;
+		color: $dark;
+		&:before {
+			content: '';
+			position: absolute;
+			width: 63px;
+			height: 2px;
+			background-color: $pink;
+			left: 0;
+			top: 20px;
+		}
+	}
+}
+.testimonials {
+  .slick-arrow {
+	position: absolute;
+	top: 41%;
+	transform: translateY(-50%);
+	transition: transform .3s ease-in;
+	fill: #ccc;
+		&:hover {
+			fill: $pink;
+			transform: scale(1.2) translateY(-40%);
+		}
+	}
+	.slick-prev {
+		left: 25px;
+	}
+	.slick-next {
+		right: 25px;
+	}
+}

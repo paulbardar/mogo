@@ -1,0 +1,51 @@
+.map {
+	padding: 55px 20px 0;
+	// background-image: url('../images/map-bg.jpg');
+	background-position: 50% 50%;
+	background-size: cover;
+	position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: rgba(217, 217, 217, 0.9);
+		z-index: 1;
+	}
+	.map-content {
+		position: relative;
+		z-index: 5;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		img {
+			text-align: center;
+			margin-bottom: 17px;
+		}
+	}
+	.map-link {
+		&:hover {
+			h3 {
+				color: $dark;
+			}
+
+		}
+	}
+	h3 {
+		@include title;
+		@include after-title-line;
+		margin-bottom: 73px;
+		&:before {
+			bottom: -16px;
+		}
+
+		text-transform: uppercase;
+		position: relative;
+		z-index: 5;
+		color: $pink;
+	}
+}

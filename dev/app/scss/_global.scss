@@ -1,0 +1,41 @@
+.block-head,
+.main-title {
+	.sup-title {
+		font: 400 2.4rem/1.2 $kaushanscript;
+		margin-bottom: 1.2rem;
+		color: $dark;
+		text-align: center;
+		display: block;
+	}
+	.title {
+		position: relative;
+		text-align: center;
+		letter-spacing: -0.0233em;
+		color: $dark;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: -0.0233em;
+		margin-bottom: 8rem;
+		&:before {
+		  content: "";
+		  position: absolute;
+		  height: 0.3rem;
+		  width: 6rem;
+		  left: 50%;
+		  bottom: -3.8rem;
+		  background-color: $pink;
+		  transform: translateX(-50%);
+		}
+	}
+	p {
+		max-width: 960px;
+		margin: 0 auto;
+		text-align: center;
+		&:last-child {
+			margin-bottom: 9.7rem;
+		}
+	}
+	p + p {
+		margin-top: 1em;
+	}
+}

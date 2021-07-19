@@ -1,0 +1,75 @@
+// vars
+$images: '../images/';
+$fonts: '../fonts/';
+$fa-font-path: '../fonts/fontawesome';
+
+// fonts
+$iconfont: 'FontAwesome';
+$montserrat: 'Montserrat';
+$roboto: 'Roboto', sans-serif;
+$kaushanscript: 'Kaushan Script', cursive;
+
+// bootstrap grid
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+$grid-gutter-width-mobile: $grid-gutter-width;
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1340px
+);
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1230px
+);
+
+// colors
+$white: #fff;
+$black: #000;
+$gray: #707070;
+$dark: #333333;
+$light-gray: #999999;
+$xlight-gray: #F8F8F8;
+$footer-logo-color: #cccccc;
+$blue: #95E1D3;
+$pink: #F38181;
+$yellow: #FCE38A;
+$btn-color: $white;
+$btn-bg: $blue;
+$footerbg: $white;
+
+// base vars
+$text-color-base: $light-gray;
+$body-bg: $white;
+$font-family-base: $roboto;
+$font-size-base: 1.8rem;
+$font-size-primary: 1.5rem;
+$font-size-secondary: 1.4rem;
+$font-size-menu: 1.4rem;
+$font-size-third: 2.4rem;
+$font-weight-base: 400;
+$line-height-base: 1.6;
+$links-color-base: inherit;
+$headings-font-family: $montserrat;
+$headings-font-weight: 700;
+$link-hover-color: $yellow;
+
+$transition: all .3s ease;
+
+$fontTitle: $headings-font-family;
+$fsH1Title: 15rem;
+$fsH2Title: 3rem;
+$fsH3Title: 2.4rem;
+$fsH4Title: 1.7rem;
+$fsH5Title: 1.4rem;
+$fsH6Title: 1.2rem;
+
+// dev2
+// dev3
+// dev4

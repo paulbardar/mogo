@@ -1,0 +1,31 @@
+/* buttons */
+.btn {
+	white-space: normal;
+	display: inline-block;
+	background-color: $btn-bg;
+	border: none;
+	color: $btn-color;
+	padding: 1rem 2rem;
+	&:hover {
+		background-color:$pink;
+		color: $white;
+	}
+	.fa {
+		margin-left: 5px;
+	}
+
+	&-block {
+
+	}
+
+	&-sm {
+
+	}
+
+	&-lg {
+
+	}
+}
+.form-control {
+	transition: all .3s ease-in;
+}

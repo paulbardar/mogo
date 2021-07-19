@@ -1,0 +1,16 @@
+.brands {
+  padding: 65px 0 59px;
+  background: $xlight-gray;
+  .container-brands {
+	max-width: 1300px;
+  }
+  .slide-brand {
+	position: relative;
+	outline: none;
+	display: -webkit-flex;
+	display: -ms-flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+}

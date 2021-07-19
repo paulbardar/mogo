@@ -1,0 +1,84 @@
+.testimonials2 {
+	padding: 3rem 0 5rem;
+	@include media-breakpoint-up(md) {
+		padding: 10.2rem 0 12.9rem;
+	}
+}
+.slide-speech2 {
+	position: relative;
+	outline: none;
+	.slide-speech2-wrap {
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		padding: 0 11rem 0 8.3rem;
+		@include media-breakpoint-down(md) {
+	 		flex-direction: column;
+	 		align-items: center;
+	 		padding: 0 30px;
+		}
+	}
+	.slide-speech2-img {
+		width: 21%;
+		img {
+			display: block;
+			// border-radius: 50%;
+		}
+		@include media-breakpoint-down(md) {
+			width: 35%	;
+		}
+	}
+	.slide-speech2-block {
+		width: 79%;
+		padding-top: 3.1rem;
+		padding-left: 2.3rem;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		flex-direction: column;
+		@include media-breakpoint-down(md) {
+			width: 100%;
+		}
+	}
+	.slide-speech2-phrase {
+		font-size: $font-size-third;
+		font-style: italic;
+		line-height: 1.5;
+		margin-bottom: 1rem;
+	}
+	.slide-speech2-author {
+		font-family: $kaushanscript;
+		font-size: $font-size-third;
+		color: $dark;
+		position: relative;
+		padding-left: 7rem;
+		&:before {
+			content: '';
+			position: absolute;
+			width: 6rem;
+			height: 0.2rem;
+			background-color: $pink;
+			left: 0;
+			top: 2rem;
+		}
+	}
+}
+.slick-arrow {
+	position: absolute;
+	top: 47%;
+	transform: translateY(-50%);
+	transition: transform .3s ease-in;
+	fill: #ccc;
+	&:hover {
+		fill: $pink;
+		transform: scale(1.2) translateY(-50%);
+	}
+}
+.slick-prev2 {
+	left: 2.4rem;
+}
+.slick-next2 {
+	right: 2.4rem;
+}

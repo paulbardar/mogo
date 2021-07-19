@@ -1,0 +1,42 @@
+.statistic {
+	background: $blue;
+	.statistic-wrap {
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		flex-wrap: wrap;
+		@include media-breakpoint-down(md) {
+		justify-content: center;
+		padding: 20px 0;
+	}
+	}
+	.statistic-item {
+	width: 50%;
+	border: 1px solid $white;
+	padding: 30px 0 30px;
+	font-family: $montserrat;
+	text-align: center;
+	color: $white;
+	@include media-breakpoint-up(md) {
+		width: 20%;
+		padding: 73px 0 85px;
+		border: none;
+		border-left: 1px solid $white;
+	}
+	&:last-child {
+		border-right: 1px solid $white;
+	}
+	.amount {
+		display: block;
+		font-size: 72px;
+		margin-bottom: 10px;
+		font-weight: bold;
+		line-height: 1.2;
+	}
+	.desc{
+		font-size: $font-size-secondary;
+		text-transform: uppercase;
+		line-height: 1.2;
+		}
+	}
+}
